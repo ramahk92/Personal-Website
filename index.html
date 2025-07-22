@@ -44,13 +44,16 @@
             padding: 0 15px;
         }
         
-        /* Header Styles */
+        /* Header Styles with Background Image */
         header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            background: 
+                linear-gradient(135deg, rgba(26, 58, 108, 0.85), rgba(44, 90, 160, 0.85)),
+                url('https://www.geckhagaria.org.in/wp-content/uploads/sites/12/2023/04/file_643522876e9dc.jpeg') center/cover no-repeat;
             color: white;
             padding: 30px 0;
             position: relative;
             overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
         
         .header-content {
@@ -63,36 +66,42 @@
         }
         
         .profile-image {
-            width: 180px;
-            height: 180px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             border: 5px solid rgba(255, 255, 255, 0.3);
             margin-bottom: 20px;
-            background: linear-gradient(45deg, #2c5aa0, #4a7bc3);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 80px;
-            color: white;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         
         .header-text h1 {
             font-size: 2.5rem;
             margin-bottom: 5px;
             color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
         }
         
         .header-text h2 {
             font-size: 1.4rem;
             font-weight: 400;
             margin-bottom: 15px;
-            color: rgba(255, 255, 255, 0.9);
+            color: rgba(255, 255, 255, 0.95);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
         }
         
         .institution {
             font-size: 1.1rem;
             margin-bottom: 20px;
-            color: rgba(255, 255, 255, 0.85);
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 600px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
         }
         
         /* Navigation */
@@ -424,6 +433,11 @@
             .stat-box {
                 width: 80%;
             }
+            
+            .profile-image {
+                width: 160px;
+                height: 160px;
+            }
         }
         
         @media (max-width: 480px) {
@@ -442,16 +456,21 @@
             .section-content {
                 padding: 20px;
             }
+            
+            .profile-image {
+                width: 140px;
+                height: 140px;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Header Section with Background Image -->
     <header>
         <div class="container">
             <div class="header-content">
                 <div class="profile-image">
-                    <i class="fas fa-user-graduate"></i>
+                    <img src="https://www.geckhagaria.org.in/wp-content/uploads/sites/12/2023/10/file_653f49f608295.jpg" alt="Prof. Ram Kumar">
                 </div>
                 <div class="header-text">
                     <h1>Mr. Ram Kumar</h1>
@@ -491,11 +510,10 @@
                             <p>I am a dedicated professional currently serving as an Assistant Professor in the Department of Electrical Engineering at the Government Engineering College, Khagaria, located in Raun, Alauli, Bihar, India. With over 5 years of academic experience, I am passionate about teaching, research, and guiding the next generation of engineers.</p>
                             <p>I completed M.Tech in Control and Instrumentation from Dr. B. R. Ambedkar National Institute of Technology Jalandhar, Punjab, India. I am currently pursuing a Ph.D. (part-time) in the Department of Instrumentation and Control Engineering at the National Institute of Technology Tiruchirappalli, Tamil Nadu, India.  I believe in creating an engaging learning environment that combines theoretical knowledge with practical applications.</p>
                             <p>My professional journey has encompassed diverse areas within Power System and Control Engineering, reflecting his versatile skill set and broad expertise. My areas of interest span a broad spectrum of topics, including control theory and applications, circuit design, model order reduction, optimization, robotics, renewable energy, and control of lower extremity exoskeletons. My multidisciplinary approach to research underscores his innovative thinking and willingness to explore new avenues for technological advancement. Throughout my career, I have been actively involved in various research projects funded by esteemed organizations such as the Government of India, the Council of Scientific and Industrial Research (CSIR), and the Science and Engineering Research Board (SERB).</p>
-							<p>I have have published over 13 research articles in reputable national and international journals and conferences. In addition to my research contributions, I serve as an editor for the Journal of Control Science and Engineering (CSE) published by the Science Publishing Group.</p>
+                            <p>I have have published over 13 research articles in reputable national and international journals and conferences. In addition to my research contributions, I serve as an editor for the Journal of Control Science and Engineering (CSE) published by the Science Publishing Group.</p>
                         </div>
-						
-									  
-				        <div class="contact-info">
+                        
+                        <div class="contact-info">
                             <p><strong>Email:</strong> ramahk92@geckhagaria.org.in</p>
                             <p><strong>Phone:</strong> +91 9108642983</p>
                             <p><strong>Office:</strong> Department of Electrical Engineering, 2nd Floor, Room 214</p>
@@ -575,41 +593,41 @@
                     <ul style="padding-left: 20px; margin-top: 15px;">
                         <li style="margin-bottom: 15px;">
                             <strong>Ram Kumar</strong> and Afzal Sikander. Development of new framework for order abatement and control design strategy. Proceedings of the Institution of Mechanical Engineers, Part I: Journal of Systems and Control Engineering (2024). https://doi.org/10.1177/09596518241271853
-							</li>
+                            </li>
                         <li style="margin-bottom: 15px;">
                             <strong>Ram Kumar</strong> and Afzal Sikander. Review and analysis of model order reduction techniques for high-dimensional complex systems. Microsyst Technol (2024). https://doi.org/10.1007/s00542-023-05605-8
-							</li>
+                            </li>
                         <li style="margin-bottom: 15px;">
                             <strong>Ram Kumar</strong> & Afzal Sikander. A new hybrid approach based on fuzzy logic and optimization for load frequency control, International Journal of Modelling and Simulation (2024). https://doi.org/10.1080/02286203.2024.2315327
-							</li>
-						<li style="margin-bottom: 15px;">
-							<strong>Ram Kumar</strong> and Afzal Sikander. A new order abatement method based on Atom search optimization. Int. J. Dynam. Control 11, 1704–1717 (2023). https://doi.org/10.1007/s40435-022-01094-1   
-						</li>
-						<li style="margin-bottom: 15px;">
-							<strong>Ram Kumar</strong> and Afzal Sikander. A novel load frequency control of multi area non-reheated thermal power plant using fuzzy PID cascade controller. Sādhanā 48, 25 (2023). https://doi.org/10.1007/s12046-022-02071-2	
-						</li>
-						<li style="margin-bottom: 15px;">
+                            </li>
+                        <li style="margin-bottom: 15px;">
+                            <strong>Ram Kumar</strong> and Afzal Sikander. A new order abatement method based on Atom search optimization. Int. J. Dynam. Control 11, 1704–1717 (2023). https://doi.org/10.1007/s40435-022-01094-1   
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <strong>Ram Kumar</strong> and Afzal Sikander. A novel load frequency control of multi area non-reheated thermal power plant using fuzzy PID cascade controller. Sādhanā 48, 25 (2023). https://doi.org/10.1007/s12046-022-02071-2    
+                        </li>
+                        <li style="margin-bottom: 15px;">
                             <strong>Ram Kumar</strong> and D. Ezhilarasi. A state-of-the-art survey of model order reduction techniques for large-scale coupled dynamical systems. Int. J. Dynam. Control 11, 900–916 (2023). https://doi.org/10.1007/s40435-022-00985-7
-						</li>
-						<li style="margin-bottom: 15px;">
+                        </li>
+                        <li style="margin-bottom: 15px;">
                             <strong>Ram Kumar</strong> and Afzal Sikander. Parameter identification for load frequency control using fuzzy FOPID in power system. COMPEL - The international journal for computation and mathematics in electrical and electronic engineering, Vol. 40 No. 4, pp. 802-821(2021). https://doi.org/10.1108/COMPEL-04-2020-0159
-						</li>
+                        </li>
                     </ul>
-					
-					<h3 style="margin-top: 30px;">Publications (National/International Conferences)</h3>
+                    
+                    <h3 style="margin-top: 30px;">Publications (National/International Conferences)</h3>
                     <ul style="padding-left: 20px; margin-top: 15px;">
                         <li style="margin-bottom: 15px;">
                         <strong>Ram Kumar</strong>, Yogesh Bothara, D. Ezhilarasi and K. Mohanavelu, "Atomic Orbital Search Optimization Based Fractional Order PID Controller for 4 DoF Lower Limb Exoskeleton," 2023 International Conference on Power, Instrumentation, Control and Computing (PICC), Thrissur, India, 2023, pp. 1-6, doi: 10.1109/PICC57976.2023.10142336.    
-						</li>
-						<li style="margin-bottom: 15px;">
+                        </li>
+                        <li style="margin-bottom: 15px;">
                         Md. Imtiyaz Uddin, Rahul Kr Sharma, <strong>Ram Kumar</strong> and D. Ezhilarasi, "Adaptive Backstepping Control of 2-DOF Helicopter System Under Parametric Uncertainty," 2023 International Conference on Power, Instrumentation, Control and Computing (PICC), Thrissur, India, 2023, pp. 1-6, doi: 10.1109/PICC57976.2023.10142491.    
-						</li>
-						<li style="margin-bottom: 15px;">
+                        </li>
+                        <li style="margin-bottom: 15px;">
                         <strong>Ram Kumar</strong>, S. Ragothaman, M. Nitteesh, V. G. Kumar and D. Ezhilarasi, "Actuator selection for lower limb exoskeleton prototype design for paraplegic patients", 3rd International Conference on Advancements in Automation Robotics & Sensing (ICAARS 2022), vol. 1, no. 12, pp. 187-194, 2022.    
-						</li>
-						<li style="margin-bottom: 15px;">
+                        </li>
+                        <li style="margin-bottom: 15px;">
                         <strong>Ram Kumar</strong> and Afzal Sikander, "Controller Design Strategies for Load Frequency Control in Power System" 2022 Soft Computing: Theories and Applications. Advances in Intelligent Systems and Computing, India, vol 1053. Springer, Singapore. https://doi.org/10.1007/978-981-15-0751-9_120    
-						</li>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -654,12 +672,12 @@
                         <div class="project-meta">
                             <span><i class="fas fa-user"></i> 3 Students</span>
                             <span><i class="fas fa-calendar"></i> 2024</span>
-							<span><i class="fas fa-trophy"></i> Best Paper Award at E2ACON NITJ 2025</span>
+                            <span><i class="fas fa-trophy"></i> Best Paper Award at E2ACON NITJ 2025</span>
                         </div>
                         <p>This project presents an intelligent irrigation system integrated with cloud computing to enable real-time monitoring and automated water control based on soil and environmental conditions. It enhances water efficiency and crop yield by leveraging IoT sensors and data-driven decision-making.</p>
                     </div>
-					
-					<div class="project-item">
+                    
+                    <div class="project-item">
                         <h3>Vehicle Accident Detection and Alert System</h3>
                         <div class="project-meta">
                             <span><i class="fas fa-user"></i> 5 Students</span>
